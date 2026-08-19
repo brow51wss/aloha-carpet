@@ -14,11 +14,13 @@ export function Header() {
 
   const navLinks = [
     { href: "/#services", label: "Services" },
+    { href: "/reviews", label: "Reviews" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
   ]
 
   const isActive = (href: string) => {
+    if (href === "/reviews") return pathname === "/reviews"
     if (href === "/about") return pathname === "/about"
     if (href === "/contact") return pathname === "/contact"
     return false

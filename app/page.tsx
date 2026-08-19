@@ -9,6 +9,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { ReviewsSection } from "@/components/reviews-section"
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <HeroSection />
       <ServicesSection />
       <ExperienceSection />
+      <ReviewsSection />
       <VisualImpactSection />
       <ContactSection />
       <Footer />
